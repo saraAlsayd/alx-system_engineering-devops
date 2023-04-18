@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Cow call Cats" | tr "c" "C"
+tr -d "Cc"
