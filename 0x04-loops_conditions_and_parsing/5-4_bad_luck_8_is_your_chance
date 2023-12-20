@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#print "Holberton School" 10 times using while loop+ bad luck +good luck
+
+lop=0
+
+while [ $lop -lt 10 ]; do
+ if [ $lop -eq 3 ]; then
+  echo "bad luck"
+ elif [ $lop -eq 7 ]; then 
+  echo "good luck"
+ else
+  echo "Best School"
+ fi
+ ((lop++))
+ done
