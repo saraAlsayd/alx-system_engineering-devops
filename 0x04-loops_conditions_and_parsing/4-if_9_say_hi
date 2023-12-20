@@ -3,8 +3,8 @@
 
 lop=0
 
-while [ $lop -le 10 ]; do
- if [ $lop -eq 9 ]; then
+while [ $lop -lt 10 ]; do
+ if [ $lop -eq 8 ]; then
   echo "Best School"
   echo "Hi"
  else
