@@ -1,10 +1,10 @@
+#!/usr/bin/env bash
+#print "Holberton School" 10 times using while loop
 
-}ys "Holberton School" 10 times using while loop
+lop=0
 
-count=0
-
-while [ $count -lt 10 ]
+while [ $lop -lt 10 ]
 do
  echo "Best School"
- (( count++ ))
+ (( lop++ ))
 done
