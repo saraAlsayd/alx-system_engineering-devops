@@ -2,7 +2,7 @@
 exec { 'fix-apache-error':
 	 command     => '/bin/bash -c "some_command_to_fix_the_issue"',
 	 path        => '/usr/bin:/bin',
-	refreshonly  => 'true',
+	refreshonly  => true,
 	subscribe   => Service['apache2'],
 
 }
