@@ -1,8 +1,5 @@
 #File: 0-strace_is_your_friend.pp
-exec { 'fix-apache-error':
-	 command     => '/bin/bash -c "some_command_to_fix_the_issue"',
-	 path        => '/usr/bin:/bin',
-	refreshonly  => true,
-	subscribe   => Service['apache2'],
-
+exec { 'fix-wordpress':
+ command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+ path    => '/usr/local/bin/:/bin/'
 }
